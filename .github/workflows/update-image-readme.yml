@@ -29,8 +29,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "Your Name"
-          git config --global user.email "your-email@example.com"
+          git config --global user.name "brendaapm"
+          git config --global user.email "brendaapm@gmail.com"
           git add README.md
           git commit -m "Update image"
           git push
