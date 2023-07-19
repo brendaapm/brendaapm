@@ -1,16 +1,33 @@
-name: Update Image Readme
+name: Update Image - README
 
 on:
   workflow_dispatch:
   schedule:
-    # Runs at 1 UTC everyday
-    - cron: "0 1 * * *"
-
+    # Runs every 5 min
+     - cron: "*/5 * * * *"
 jobs:
   update-readme:
     name: Update Image README
     runs-on: ubuntu-latest
     steps:
-      - uses: brendaapm/update-readme-image@main
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          IMG_ALT: <alt-message> #image alt to be displayed if image is not mapped correctly
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate random image
+        run: python generate_random_image.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "Your Name"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "Update image"
+          git push
