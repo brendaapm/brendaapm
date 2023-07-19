@@ -18,9 +18,10 @@
       pt/br: Pergunte-me sobre Capivaras
 
 
-
-
-
+<a href="https://github.com/marketplace/actions/update-image-readme">
+<!--START_SECTION:update_image-->
+<!--END_SECTION:update_image-->
+</a>
 
 
 <!--
