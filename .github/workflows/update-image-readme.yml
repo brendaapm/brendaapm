@@ -3,8 +3,9 @@ name: Update Image - README
 on:
   workflow_dispatch:
   schedule:
-    # Runs every 5 min
-     - cron: "*/5 * * * *"
+    # Runs every 5 minutes
+    - cron: "*/5 * * * *"
+
 jobs:
   update-readme:
     name: Update Image README
@@ -13,21 +14,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          python-version: 3.x
+          node-version: 14
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Generate random image
-        run: python generate_random_image.py
+      - name: Display random image
+        run: |
+          image_dir="brendaapm/.github/images"
+          cd "$image_dir"
+          images=(*)
+          random_image="${images[RANDOM % ${#images[@]}]}"
+          echo "![Random Image]($random_image)" > "$GITHUB_WORKSPACE/README.md"
 
       - name: Commit and push changes
         run: |
           git config --global user.name "Your Name"
           git config --global user.email "your-email@example.com"
-          git add .
+          git add README.md
           git commit -m "Update image"
           git push
