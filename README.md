@@ -7,10 +7,16 @@
 💻 I’m currently learning Data Analysis 
       
       pt/br: Atualmente estudo Análise de dados
+
+⚡ I'm currently immersed in a Data Analysis Bootcamp at SoulCode, and I must say, it's an absolute blast!
+    
+      pt/br: Atualmente, estou me divertindo muito estudando em um Bootcamp de Análise de Dados na SoulCode.
+
   
 💬 Ask me about Capybaras
       
       pt/br: Pergunte-me sobre Capivaras
+
 
 
 
