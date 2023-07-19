@@ -1,4 +1,4 @@
-name: Update Image - README
+name: Update Image Readme
 
 on:
   workflow_dispatch:
@@ -11,26 +11,6 @@ jobs:
     name: Update Image README
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - uses: brendaapm/.github/images/update-readme-image@main
         with:
-          node-version: 14
-
-      - name: Display random image
-        run: |
-          image_dir="brendaapm/.github/images"
-          cd "$image_dir"
-          images=(*)
-          random_image="${images[RANDOM % ${#images[@]}]}"
-          echo "![Random Image]($random_image)" > "$GITHUB_WORKSPACE/README.md"
-
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "brendaapm"
-          git config --global user.email "brendaapm@gmail.com"
-          git add README.md
-          git commit -m "Update image"
-          git push
+          IMG_ALT: <alt-message> #image alt to be displayed if image is not mapped correctly
