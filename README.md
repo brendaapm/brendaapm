@@ -1,3 +1,5 @@
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=brendaapm&label=Spotted+Capybaras&color=f59342&style=flat" alt="brendaapm" /> </p>
+
 ### Hello, Folks! 👋  
 
 📐 Architect fascinated by data
@@ -51,6 +53,6 @@
   <a href="https://www.linkedin.com/in/brendamoura" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
 
-  <p align="right"> <img src="https://komarev.com/ghpvc/?username=brendaapm&label=Spotted+Capybaras&color=f59342&style=flat" alt="brendaapm" /> </p>
+  
 
  
