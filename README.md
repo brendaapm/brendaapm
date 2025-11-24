@@ -6,9 +6,9 @@
      
       pt/br: Arquiteta fascinada por dados 
 
-💻 I’m currently studying Data Science
+💻 I’m currently a Data Scientist and AI Engineer
       
-      pt/br: Atualmente estudo Ciência de dados
+      pt/br: Atualmente trabalho com Ciência de dados e Engenharia de IA
 
 ⚡ I'm immersed - and having fun - in a bunch of projects 
     
