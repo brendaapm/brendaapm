@@ -3,8 +3,11 @@
 ### Hello, Folks! 👋  
 
 📐 Architect fascinated by data
+
 💻 I’m currently a Data Scientist 
+
 ⚡ I'm immersed - and having fun - in a bunch of projects 
+
 💬 Ask me about Capybaras
       
 
